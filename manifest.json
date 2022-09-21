@@ -1,5 +1,5 @@
 {
-    "name": "Page Redder",
+    "name": "crypto-price",
     "manifest_version": 3,
     "version": "0.1",
     "description": "This extension gives you price of BTC, ETH, SOL and LINK ",
