@@ -2,12 +2,7 @@
     "name": "Page Redder",
     "manifest_version": 3,
     "version": "0.1",
-    "description": "Turns the page red when you click the icon",
-    "permissions": [
-        "alarms",
-        "notifications",
-        "storage"
-    ],
+    "description": "This extension gives you price of BTC, ETH, SOL and LINK ",
     "background": {
       "service_worker": "main.js"
     },
