@@ -1,0 +1,23 @@
+{
+    "name": "Page Redder",
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "Turns the page red when you click the icon",
+    "permissions": [
+        "alarms",
+        "notifications",
+        "storage"
+    ],
+    "background": {
+      "service_worker": "main.js"
+    },
+    "action": {
+        "default_popup": "/scripts/index.html"
+      },
+      "icons": {
+        "16": "/images/icon.png",
+        "32": "/images/icon.png",
+        "48": "/images/icon.png",
+        "128": "/images/icon.png"
+      }
+  }
