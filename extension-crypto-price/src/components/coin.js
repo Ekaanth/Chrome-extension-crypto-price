@@ -24,7 +24,7 @@ function CoinComponent({ cryptoId, cryptoName }) {
     <div>
       <div class=" bg-gray-50 flex flex-col justify-center relative overflow-hidden sm:py-12">
         <div class="px-2">
-          <div class="relative px-5 py-6 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 grid-flow-row grid-cols-2 justify-between">
+          <div class="relative px-5 py-6 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top flex-start space-x-6 grid-flow-row grid-cols-2 justify-between">
             {!tokenDetails ? (
               <>
                 <div>
