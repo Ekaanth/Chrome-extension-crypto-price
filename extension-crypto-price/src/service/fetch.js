@@ -1,8 +1,7 @@
-const axios = require("axios");
-
 export async function getPriceDetails(coin) {
-  const response = await axios.get(
+  const response = await fetch(
     `https://crypto-price-fetch.herokuapp.com/api/token/${coin}`
   );
-  return response;
+  const data = await response.json();
+  return data;
 }

@@ -6,14 +6,14 @@ function CoinComponent({ cryptoId, cryptoName }) {
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const getPrice = () => {
     setButtonDisabled(true);
-    const tokenDetails = getPriceDetails(cryptoId).then((res) => {
+    getPriceDetails(cryptoId).then((res) => {
       console.log(res);
       setTokenDetails({
-        name: res.data.data[cryptoId].name,
+        name: res.data[cryptoId].name,
         symbol: cryptoId,
-        price: Number(res.data.data[cryptoId].quote.USD.price).toFixed(2),
+        price: Number(res.data[cryptoId].quote.USD.price).toFixed(2),
         dailyChange: Number(
-          res.data.data[cryptoId].quote.USD.percent_change_24h
+          res.data[cryptoId].quote.USD.percent_change_24h
         ).toFixed(2),
       });
       return;
