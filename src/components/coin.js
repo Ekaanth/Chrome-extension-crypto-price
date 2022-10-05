@@ -25,7 +25,7 @@ function CoinComponent({ cryptoId, cryptoName }) {
     <div>
       <div class=" bg-gray-50 flex flex-col justify-center relative overflow-hidden sm:py-12">
         <div class="px-2">
-          <div class="relative px-4 py-4 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none ">
+          <div class="relative px-4 py-6 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none ">
             {!tokenDetails ? (
               !isLoading ? (
                 <div class="flex flex-start justify-between">
@@ -39,7 +39,7 @@ function CoinComponent({ cryptoId, cryptoName }) {
                   </div>
                 </div>
               ) : (
-                <div class="relative py-4">
+                <div class="relative py-2">
                   <div class="spin"></div>
                 </div>
               )
