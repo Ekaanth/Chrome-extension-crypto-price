@@ -2,13 +2,13 @@
   "name": "crypto-price",
   "manifest_version": 3,
   "version": "0.1",
-  "description": "This extension gives you price of BTC, ETH, SOL and LINK ",
+  "description": "This extension gives you price of BTC, ETH, BNB and LINK in the near future you will be able to search and fetch the price of any token",
   "action": {
     "default_popup": "index.html"
   },
   "icons": {
-    "192": "logo192.png",
-    "512": "logo512.png"
+    "192": "icon.png",
+    "512": "icon.png"
   },
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'"
