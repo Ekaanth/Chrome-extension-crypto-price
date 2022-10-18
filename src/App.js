@@ -10,7 +10,7 @@ function App() {
       <HeaderComponent />
       <div className="pt-4">
         {tokens.map((token) => (
-          <CoinComponent cryptoId={token} />
+          <CoinComponent key={token} cryptoId={token} />
         ))}
       </div>
     </>
