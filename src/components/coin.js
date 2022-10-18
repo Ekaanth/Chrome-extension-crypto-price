@@ -7,7 +7,6 @@ function CoinComponent({ cryptoId, cryptoName }) {
   const getPrice = () => {
     setIsLoading(true);
     getPriceDetails(cryptoId).then((res) => {
-      console.log(res);
       setTokenDetails({
         name: res.data[cryptoId].name,
         symbol: cryptoId,
@@ -17,20 +16,19 @@ function CoinComponent({ cryptoId, cryptoName }) {
         ).toFixed(2),
       });
       setIsLoading(false);
-      return;
     });
   };
 
   return (
     <div>
-      <div class=" bg-gray-50 flex flex-col justify-center relative overflow-hidden sm:py-12">
+      <div class="flex flex-col justify-center relative overflow-hidden sm:py-4">
         <div class="px-2">
-          <div class="relative px-4 py-6 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none ">
+          <div class="relative px-4 py-6 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none bg-gradient-to-r from-gray-700 to-slate-700">
             {!tokenDetails ? (
               !isLoading ? (
                 <div class="flex flex-start justify-between">
                   <div class="flex-2">
-                    <p class="text-slate-800 font-bold">{cryptoName}</p>
+                    <p class="font-bold">{cryptoName}</p>
                   </div>
                   <div class="flex-2">
                     <button class="float-right" onClick={getPrice}>
