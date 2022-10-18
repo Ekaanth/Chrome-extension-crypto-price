@@ -19,7 +19,7 @@ function CoinComponent({ cryptoId }) {
   }, []);
 
   return (
-    <div>
+    <div className="pt-4">
       <div className="flex flex-col justify-center relative overflow-hidden sm:py-4">
         <div className="px-2">
           {tokenDetails ? (
