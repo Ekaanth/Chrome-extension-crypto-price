@@ -9,7 +9,7 @@ function CoinComponent({ cryptoId, cryptoName }) {
     setIsLoading(true);
     getPriceDetails(cryptoId)
       .then((res) => {
-        if (Object.entries(res.data).length != 0) {
+        if (Object.entries(res.data).length !== 0) {
           setTokenDetails({
             name: res.data[cryptoId].name,
             symbol: cryptoId,
@@ -32,7 +32,7 @@ function CoinComponent({ cryptoId, cryptoName }) {
     if (!cryptoName) {
       getPrice();
     }
-  }, []);
+  }, [cryptoName, getPrice]);
 
   return (
     <div className="flex flex-col justify-center relative overflow-hidden sm:py-4">
