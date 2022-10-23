@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function CoinComponent({ cryptoId, cryptoName }) {
   const [tokenDetails, setTokenDetails] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState("");
+  const [isError, setIsError] = useState(false);
   const getPrice = () => {
     setIsLoading(true);
     getPriceDetails(cryptoId)
@@ -28,11 +28,12 @@ function CoinComponent({ cryptoId, cryptoName }) {
         setIsLoading(false);
       });
   };
+
   useEffect(() => {
     if (!cryptoName) {
       getPrice();
     }
-  }, [cryptoName, getPrice]);
+  }, [cryptoName]);
 
   return (
     <div className="flex flex-col justify-center relative overflow-hidden py-4">
