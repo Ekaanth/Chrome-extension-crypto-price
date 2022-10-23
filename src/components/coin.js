@@ -35,7 +35,7 @@ function CoinComponent({ cryptoId, cryptoName }) {
   }, [cryptoName, getPrice]);
 
   return (
-    <div className="flex flex-col justify-center relative overflow-hidden sm:py-4">
+    <div className="flex flex-col justify-center relative overflow-hidden py-4">
       <div className="px-2">
         <div className="relative px-4 py-6 bg-slate-300 ring-1 ring-gray-900/5 rounded-lg leading-none bg-gradient-to-r from-gray-700 to-slate-700">
           {!tokenDetails && !isError ? (
