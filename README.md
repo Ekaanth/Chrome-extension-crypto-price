@@ -14,24 +14,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance
 
+Once your app is built you can navigate to extensions> manage extensions> load unpacked.
+Once you click on it, you should be able to select yout build file which has `manifest.json` this will add a new extension to yout browser. which can be pinned.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Screenshots
 
-<img src="https://user-images.githubusercontent.com/22363352/194065801-71973506-76bc-4024-8512-65b25ff8501f.png" width="250" />
+![Screenshot 2022-10-28 at 2 51 24 PM](https://user-images.githubusercontent.com/22363352/198553898-c2e2c612-2a0b-4d3a-b60e-9de6c327ec83.png)
+![Screenshot 2022-10-28 at 2 51 13 PM](https://user-images.githubusercontent.com/22363352/198553920-0e4ad522-e88a-4580-a979-95fcc2c60d2e.png)
+![Screenshot 2022-10-28 at 2 50 50 PM](https://user-images.githubusercontent.com/22363352/198553930-49808a2d-50ad-4cde-8919-59e0578cda36.png)
+![Screenshot 2022-10-28 at 2 50 30 PM](https://user-images.githubusercontent.com/22363352/198553947-3217052f-f0bf-4884-afec-2194e13f73ed.png)
+![Screenshot 2022-10-28 at 2 50 22 PM](https://user-images.githubusercontent.com/22363352/198553959-04b4ea11-e5bd-46bf-bcf4-bb0c101d1812.png)
+
+### Video
+
+https://user-images.githubusercontent.com/22363352/198553843-0efd9a51-e5e9-4a17-a815-be32c1387bdb.mov
 
 
-<img src="https://user-images.githubusercontent.com/22363352/194066068-9f61ba3e-cab1-491d-88f4-9ae193865546.png" width="250" />
-
-
-<img src="https://user-images.githubusercontent.com/22363352/194066193-4a204296-3caa-49ec-ac90-901d1fd5bb35.mov" width="250" />
