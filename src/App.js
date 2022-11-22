@@ -13,12 +13,19 @@ function App() {
   ]);
   const inputRef = useRef();
 
+  const handleClick = (id) => {
+    inputRef.current.scrollIntoView({ behavior: "smooth", block: "end" });
+  };
+
   const handleKeypress = (e) => {
-    console.log(e);
     if (e.charCode === 13) {
-      setTokens([...tokens, { id: inputRef.current.value.toUpperCase() }]);
+      const tokenId = inputRef.current.value.toUpperCase();
+      if (!tokens.some((e) => e.id === tokenId)) {
+        setTokens([...tokens, { id: tokenId }]);
+      }
       setNewToken(false);
       inputRef.current.value = "";
+      handleClick(tokenId);
     }
   };
 
@@ -35,6 +42,7 @@ function App() {
                 className="bg-transparent ring-white w-full"
                 placeholder="Enter the token symbol and press Enter"
                 onKeyPress={handleKeypress}
+                autoFocus
               />
             </div>
           </div>
